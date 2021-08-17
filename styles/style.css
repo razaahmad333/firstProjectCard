@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+body {
+  background-color: #b7eff7;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+  background-color: white;
+  width: 20%;
+  border-radius: 15px;
+}
+
+.card .cardImage img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card .cardContent {
+  padding: 10px 20px 20px 20px;
+}
+
+.card .cardPara {
+  font-size: 0.8em;
+  padding: 1px 15px;
+  font-weight: 400;
+  color: #969494;
+  text-align: center;
+}
+
+.card .cardHeader {
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.card .iconTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .cardSubcard {
+  padding: 10px 0;
+  font-size: 0.8em;
+  background-color: #f0eeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.card .cardSubcard .btnTitle {
+  font-weight: 900;
+  font-size: 10px;
+}
+
+.card .cardSubcard .btnPlan {
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.card .cardSubcard img {
+  width: 70%;
+}
+
+.card .cardSubcard .btnChange {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .cardSubcard .btnChange a {
+  color: #3829e0;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.card .cardSubcard .btnChange a:hover {
+  color: #7280a7;
+}
+
+.card .cardButton1 {
+  cursor: pointer;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #3829e0;
+  font-size: 10px;
+  font-weight: 900;
+  color: white;
+}
+
+.card .cardButton1:hover {
+  background-color: #7280a7;
+}
+
+.card .cardButton2 {
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 900;
+  margin: 10px 0;
+  text-align: center;
+  color: grey;
+}
+
+.card .cardButton2:hover {
+  color: #1f2f56;
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 75%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

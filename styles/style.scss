@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+$borderRadius:15px;
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+
+$veryPaleBlue :  hsl(225, 100%, 98%);
+$desaturatedBlue : hsl(224, 23%, 55%);
+$darkBlue : hsl(223, 47%, 23%);
+
+
+
+$fontSizePara:16px;
+body{
+    background-color: rgb(183, 239, 247);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card{
+    margin-left: auto;
+    margin-right: auto ;
+    margin-top: 130px;
+    background-color: white;
+    width: 20%;
+    border-radius: $borderRadius;
+    .cardImage{
+        img{
+            width: 100%;
+            border-top-left-radius: $borderRadius;
+            border-top-right-radius: $borderRadius;
+        }
+    }
+    .cardContent{
+        padding:10px 20px 20px 20px;
+    }
+
+    .cardPara{
+        font-size: 0.8em;
+        padding: 1px 15px;
+        font-weight: 400;
+         color: rgb(150, 148, 148);
+        text-align: center;
+    }
+    .cardHeader{
+        padding: 10px 0;
+        font-size: 15px;
+        font-weight: 900;
+        text-align: center;
+    }
+    .iconTitle{
+        display: flex;
+        align-items: center;
+        
+    }
+    .cardSubcard{
+
+        .btnTitle{
+            font-weight: 900;
+            font-size: 10px;
+        }
+
+        .btnPlan{
+            margin-top: 5px;
+            font-size: 10px;
+        }
+
+        padding: 10px 0;
+        font-size: 0.8em;
+        background-color: rgb(240, 238, 238);
+        display: flex;
+        justify-content: space-around;
+        border-radius: 5px;
+        margin: 10px 0;
+        
+
+
+        img{
+            width: 70%;
+        }
+
+        .btnChange{
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{  
+                color: $brightBlue;
+                font-size: 10px;
+                font-weight: 900;
+                &:hover{
+                    color: $desaturatedBlue;
+                }
+            }
+        }
+    }
+
+    .cardButton1{
+        cursor: pointer;
+        padding: 10px 0;
+        text-align: center;
+        border-radius: 5px;
+        width: 100%;
+        margin: 0 auto;
+        background-color:$brightBlue;
+        font-size: 10px;
+        font-weight: 900;
+        color: white;
+
+        &:hover{
+            background-color: $desaturatedBlue;
+        }
+    }
+
+    .cardButton2{
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 900;
+        margin: 10px 0;
+        text-align: center;
+        color: grey;
+        &:hover{
+            color: $darkBlue;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){
+    
+    .card{
+        width: 75%;
+    }
+}
